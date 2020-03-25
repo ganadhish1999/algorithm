@@ -1,3 +1,4 @@
+# cook your dish here
 from math import floor
 def merge(arr, l, r):
     m = floor((l+r)/2)
@@ -33,8 +34,12 @@ def inversionCount(arr, l, r):
     c = merge(arr, l, r)
     return a+b+c
     
-
-arr = [10, 8, 6, 4, 2]   
+x = int ( input("Enter number") )
+arr = list()
+for i in range(x):
+    y = int ( input())
+    arr.append(y)
+#arr = [10, 8, 6, 4, 2]   
 print(arr)
-print(inversionCount(arr, 0, 4))
+print(inversionCount(arr, 0, x-1))
 print(arr)
